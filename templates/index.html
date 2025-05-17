@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h2>Heart Disease Prediction Form</h2>
+    <form action="/predict" method="post">
+        <label>Age:</label><input type="number" name="age"><br>
+        <label>Sex (1=Male, 0=Female):</label><input type="number" name="sex"><br>
+        <label>Chest Pain Type (0–3):</label><input type="number" name="cp"><br>
+        <label>Resting Blood Pressure:</label><input type="number" name="trestbps"><br>
+        <label>Cholesterol:</label><input type="number" name="chol"><br>
+        <label>Fasting Blood Sugar > 120 mg/dl (1=True; 0=False):</label><input type="number" name="fbs"><br>
+        <label>Resting ECG Results (0–2):</label><input type="number" name="restecg"><br>
+        <label>Max Heart Rate Achieved:</label><input type="number" name="thalach"><br>
+        <label>Exercise Induced Angina (1=yes, 0=no):</label><input type="number" name="exang"><br>
+        <label>Oldpeak:</label><input type="number" step="0.1" name="oldpeak"><br>
+        <label>Slope of peak exercise ST segment (0–2):</label><input type="number" name="slope"><br>
+        <label>Number of major vessels (0–3):</label><input type="number" name="ca"><br>
+        <label>Thal (1=normal, 2=fixed defect, 3=reversible defect):</label><input type="number" name="thal"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
