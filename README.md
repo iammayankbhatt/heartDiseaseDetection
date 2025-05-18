@@ -15,27 +15,29 @@ This project uses machine learning techniques to predict the likelihood of heart
 ---
 
 ## 📁 Project Structure
-
-heart_disease_project/               # ← project root
+<pre>
+'''
+heart_disease_project/        # ← Project Root
 │
-├── app.py                           # main Flask application
-├── heart.csv                        # heart disease dataset
-├── requirements.txt                 # Python dependencies
-│-- train_model.py
-├── templates/                       # Jinja2 HTML templates
-│   └── index.html
+├── app.py                    # Main Flask application (runs the server)
+├── train_model.py            # Model training script (preprocesses data & trains ML model)
+├── heart.csv                 # Heart disease dataset
+├── requirements.txt          # Python dependencies
+├── README.md                 # Project overview & run instructions
 │
-├── static/                          # all publicly served assets
+├── templates/                # HTML templates rendered by Flask
+│   └── index.html            # Main web interface template
+│
+├── static/                   # Publicly served assets (CSS, JS, Images)
 │   ├── css/
-│   │   └── style.css
+│   │   └── style.css         # Page styling
 │   ├── js/
-│   │   └── app.js
+│   │   └── app.js            # JavaScript logic (if any)
 │   └── img/
-│       └── bg.jpg       # the futuristic heart background
-│
-└── README.md                        # project overview & run instructions
+│       └── bg.jpg            # Futuristic heart background image
 
-
+'''
+</pre>
 
 
 ---
