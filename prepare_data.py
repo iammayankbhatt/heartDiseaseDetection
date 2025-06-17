@@ -65,5 +65,5 @@ for col in int_columns:
 
 
 # Save updated dataset
-combined_df.to_csv("heart.csv", index=False)
+combined_df.to_csv("heartnew.csv", index=False)
 print("Updated dataset saved to heart.csv with new cleaned user data.")
